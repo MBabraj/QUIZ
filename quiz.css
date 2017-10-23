@@ -1,0 +1,149 @@
+
+EDIT ON
+ @import url(https://fonts.googleapis.com/css?family=Work+Sans:300,600);
+
+
+.h1{
+  font-weight: 300;
+  
+  padding: 10px;
+  font-size: 20px;
+  margin-top: 20px;
+  text-align: center;
+  background-color: #444;
+  color: #fff;
+}
+
+.quiz-container {
+  width: 600px;
+  height:300px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 10px 50px 50px 50px;
+  border-radius: 10px;
+  border: 2px solid #cbcbcb;
+  text-align: center;
+}
+
+.question{
+  font-size: 30px;
+  margin-bottom: 10px;
+  margin-top: 80px;
+}
+
+.answers {
+  margin-bottom: 20px;
+  text-align: left;
+  display: inline-block;
+}
+
+.answers label{
+  display: block;
+  margin-bottom: 10px;
+}
+
+.buttons {
+  margin-top: 30px;
+}
+
+#btn0, #btn1, #btn2, #btn3 {
+  background-color: #778897;
+  width: 250px;
+  font-size: 20px;
+  color: #fff;
+  border: 1px solid #1d3c6a;
+  border-radius: 50px;
+  margin: 10px 40px 10px 0px;
+  padding: 10px 10px;
+}
+
+#btn0:hover, #btn1:hover, #btn2:hover, #btn3:hover {
+  cursor: pointer;
+  background-color: #57636e; 
+}
+
+#btn0:focus, #btn1:focus, #btn2:focus, #btn3:focus {
+  outline: 0;
+}
+
+#progressbar {
+  margin-bottom: 30px;
+  overflow: hidden; 
+  counter-reset: step;
+}
+
+#progressbar li {
+  list-style-type: none;
+  color: blue;
+  text-transform: uppercase;
+  font-size: 9px;
+  width: 20%;
+  float: left;
+  position: relative;
+}
+
+#progressbar li:before {
+  content: counter(step);
+  counter-increment: step;
+  width:20px;
+  line-height: 20px;
+  display: block;
+  font-size: 10px;
+  color: black;
+  background-color: white;
+  border-radius: 3px;
+  margin: 0 auto 5px auto;
+}
+
+#progress li:after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: white;
+  position: absolute;
+  left: -50%;
+  top: 9px;
+  z-index: -1;
+}
+
+#progressbar li:first-child:after {
+  content: none;
+}
+
+#progressbar li.active:before, #progressbar li.active:after {
+  background: green;
+  color: white;
+}
+
+.progress-bar {
+  margin-top: 200px;
+  width: 506px;
+  height: 26px;
+  background-color: #bbb;
+  border-radius: 13px;
+  margin: 50px auto;
+  padding: 3px;
+}
+
+.progress {
+  width: 5px;
+  height: 20px;
+  border-radius: 10px;
+  background-color: darkturquoise;
+}
+
+
+
+.slide{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+.active-slide{
+  opacity: 1;
+  z-index: 2;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>QUIZ</title>
+  	<link rel="stylesheet" href="quiz.css" type="text/css">
+</head>
+
+<body>
+	<div class="quiz-container">
+
+		<ul id="progressbar">
+			<li class="active">Question 1</li>
+			<li>Question 2</li>
+			<li>Question 3</li>
+			<li>Question 4</li>
+			<li>Question 5</li>
+		</ul>
+		 <!-- <div id="percentCount" class="percent-count"></div>
+		<div class="progress-bar">
+			<div class="progress" id="progress"></div>
+		</div> !--> 
+
+		<div id="quiz">
+			<h1>Quiz</h1>
+
+			<p id="question"></p>
+
+			<div class="buttons">
+				<button id="btn0"><span id="choice0"></span></button>
+				<button id="btn1"><span id="choice1"></span></button>
+				<button id="btn2"><span id="choice2"></span></button>
+				<button id="btn3"><span id="choice3"></span></button>
+			</div>
+			
+			<hr style="margin-top: 50px">
+			<footer>
+				<p id="progress">Question x out of y.</p>
+			</footer>
+		</div>
+	</div>
+
+	<button id="previous">Previous Question</button>
+<button id="next">Next Question</button>
+<button id="submit">Submit Quiz</button>
+<div id="results"></div>
+
+	<script type="text/javascript" src="quiz.js"></script>
+
+</body>
+</html>
